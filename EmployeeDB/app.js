@@ -29,7 +29,7 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-var employeeProvider= new EmployeeProvider(process.env.CliqrTier_sr_mongocontainer_2_ClusterIP, 27017);
+var employeeProvider= new EmployeeProvider(process.env.DB_HOST, 27017);
 
 //Routes
 
